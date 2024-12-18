@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Qodly-Webinar-20R6" uuid="23848439AF574F33B6ED214E76589BDC" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="(Role)" uuid="0EFC806DE94F49BB9C3073CD224DA1B6" id="3" hide_in_REST="true">
+		<field name="ID" uuid="C5A3F6ABAD9B4029BC1F9B93725C1FA4" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="E72363304FD549379C105CA2D8E1FFCB" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="C5A3F6ABAD9B4029BC1F9B93725C1FA4"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" trashed="true"/>
+	</table>
+	<table name="(PatientSequentialNumber)" uuid="A6BBCD5E14034DC0B13BB47C0CF657A1" id="5" hide_in_REST="true">
+		<field name="ID" uuid="CE9F4201172944F39B50758F8627B705" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="sequenceNumber" uuid="DE7E8CE0EC7946808E91BDD1D48F12B4" type="3" autosequence="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="CE9F4201172944F39B50758F8627B705"/>
+		<table_extra trashed="true"/>
+	</table>
+	<table name="(User)" uuid="A53FB0F867AD4591B25F291513A5AFF3" id="6" hide_in_REST="true">
+		<field name="ID" uuid="5D69492C8A5D4460A22E741F370AF73D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="roleId" uuid="449684F9768A4966BA50FE5D855658D7" type="4" id="2"/>
+		<field name="identifier" uuid="A4A9A57E5D6B4587A99655CCB52057B4" type="10" limiting_length="255" id="3"/>
+		<field name="password" uuid="192404ABB3F84D32AAFAC3F1B6B6FAAB" type="10" limiting_length="255" id="4"/>
+		<primary_key field_name="ID" field_uuid="5D69492C8A5D4460A22E741F370AF73D"/>
+		<table_extra trashed="true"/>
+	</table>
+	<table name="Appointment" uuid="256BF68AEE9641AD90BFB702D90E641D" id="7">
+		<field name="ID" uuid="D9566BAD54C040339E61D6800786B1F6" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="patientId" uuid="C63BB1B5ACAE45528C8E8C0C50C1A296" type="4" id="2"/>
+		<field name="doctorId" uuid="D34CFB1845174DEEBA0373B09EAA247F" type="4" id="3"/>
+		<field name="when" uuid="986D7AE9F7EA4D549BAE9C2F9DCFBEA8" type="8" id="4"/>
+		<field name="whatTime" uuid="6916023E1E8A48DBB8C7E0941564017E" type="9" id="5"/>
+		<primary_key field_name="ID" field_uuid="D9566BAD54C040339E61D6800786B1F6"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true"/>
+	</table>
+	<table name="(Speciality)" uuid="273CB3E610254058B39BC897B5A4B484" id="10" hide_in_REST="true">
+		<field name="ID" uuid="EE47F8111F874B28B53E3D60788D4018" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="B1945F82C8374AF1ACFDB98594DF1EDC" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="EE47F8111F874B28B53E3D60788D4018"/>
+		<table_extra trashed="true"/>
+	</table>
+	<table name="People" uuid="3ABAED70F69F4A6D8A2D058F50F9A431" id="11">
+		<field name="ID" uuid="1D87A2AD301646CE8F003D10490ADCBD" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="firstname" uuid="292E3B613E3B4FE5AEAADA84AC8EA33F" type="10" limiting_length="255" id="2"/>
+		<field name="lastname" uuid="3E1AC19EE649491EBF4A9DC9D3073E83" type="10" limiting_length="255" id="3"/>
+		<field name="photo" uuid="C3D229F6C0774480999B3E0E0047E495" type="12" id="6"/>
+		<field name="type" uuid="1183E48CF8B34866895869C0F55B07B8" type="10" limiting_length="255" id="8"/>
+		<field name="gender" uuid="62D3045AF2FC461182824F39D6F3D32C" type="10" limiting_length="255" id="10"/>
+		<primary_key field_name="ID" field_uuid="1D87A2AD301646CE8F003D10490ADCBD"/>
+	</table>
+	<table name="(DoctorSequentialNumber)" uuid="BFBBE462EFA9427C9EAAE16C2CC98186" id="12" hide_in_REST="true">
+		<field name="ID" uuid="A82D5BEA88C44BA696EEBDB884EE941F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="sequenceNumber" uuid="AF045232E9E3408C8BEC700A91762544" type="3" autosequence="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="A82D5BEA88C44BA696EEBDB884EE941F"/>
+		<table_extra trashed="true"/>
+	</table>
+	<table name="(Why)" uuid="71411AABD25E4E399F8B72DB6C24DAB4" id="14" hide_in_REST="true">
+		<field name="ID" uuid="07D1D9E879034564BC6C9DEBF7AC0287" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="label" uuid="4254703961044EC8AB5BD2AAD7834A9D" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="07D1D9E879034564BC6C9DEBF7AC0287"/>
+		<table_extra trashed="true"/>
+	</table>
+	<relation uuid="3E4445BF0E1143F38F4C3DAA0B8A0F28" name_Nto1="patient" name_1toN="patientApps" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C63BB1B5ACAE45528C8E8C0C50C1A296" name="patientId">
+				<table_ref uuid="256BF68AEE9641AD90BFB702D90E641D" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1D87A2AD301646CE8F003D10490ADCBD" name="ID">
+				<table_ref uuid="3ABAED70F69F4A6D8A2D058F50F9A431" name="People"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="C451786620E44CFCAE566DF863AD4686" name_Nto1="doctor" name_1toN="doctorApps" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D34CFB1845174DEEBA0373B09EAA247F" name="doctorId">
+				<table_ref uuid="256BF68AEE9641AD90BFB702D90E641D" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1D87A2AD301646CE8F003D10490ADCBD" name="ID">
+				<table_ref uuid="3ABAED70F69F4A6D8A2D058F50F9A431" name="People"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="1B0E98D05B71403794E3FEF6BD89F32E" type="7">
+		<field_ref uuid="EE47F8111F874B28B53E3D60788D4018" name="ID">
+			<table_ref uuid="273CB3E610254058B39BC897B5A4B484" name="(Speciality)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="718ADCB9664F4401B559F0E8F5B4E1D7" type="7">
+		<field_ref uuid="1D87A2AD301646CE8F003D10490ADCBD" name="ID">
+			<table_ref uuid="3ABAED70F69F4A6D8A2D058F50F9A431" name="People"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="80F7BB822FCD427B8CD56CB21EF5AEED" type="7">
+		<field_ref uuid="5D69492C8A5D4460A22E741F370AF73D" name="ID">
+			<table_ref uuid="A53FB0F867AD4591B25F291513A5AFF3" name="(User)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="911CD1157B6D4CCF9AA7F0C7A0C6B64C" type="7">
+		<field_ref uuid="C5A3F6ABAD9B4029BC1F9B93725C1FA4" name="ID">
+			<table_ref uuid="0EFC806DE94F49BB9C3073CD224DA1B6" name="(Role)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="96837DBB324C45ABB304595B4F51CC02" type="1">
+		<field_ref uuid="A82D5BEA88C44BA696EEBDB884EE941F" name="ID">
+			<table_ref uuid="BFBBE462EFA9427C9EAAE16C2CC98186" name="(DoctorSequentialNumber)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A26A8548F3614DB08A53A52DA21D7A83" type="7">
+		<field_ref uuid="07D1D9E879034564BC6C9DEBF7AC0287" name="ID">
+			<table_ref uuid="71411AABD25E4E399F8B72DB6C24DAB4" name="(Why)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A95BDA6CF4F2427F96C94D0FCC23CC9A" type="1">
+		<field_ref uuid="CE9F4201172944F39B50758F8627B705" name="ID">
+			<table_ref uuid="A6BBCD5E14034DC0B13BB47C0CF657A1" name="(PatientSequentialNumber)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DD88CE5F8A5D470BAC9F674FC0276256" type="7">
+		<field_ref uuid="D9566BAD54C040339E61D6800786B1F6" name="ID">
+			<table_ref uuid="256BF68AEE9641AD90BFB702D90E641D" name="Appointment"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

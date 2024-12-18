@@ -1,0 +1,18 @@
+{
+	"classes": [
+		{
+			"name": "cart",
+			"content": "self {\n  background-color : #ffffffff;\n  box-shadow : 0px 0px 6px 0px #00000023;\n  display : flex;\n  flex-direction : column;\n  align-items : start;\n  justify-content : flex-start;\n  gap : 10px;\n  margin-top : 0px;\n  max-width : 600px;\n  border-width : 1px;\n  border-radius : 20px;\n\t}",
+			"children": {},
+			"parentId": null,
+			"origin": "eGt9Dx-Ryx",
+			"id": "3LxLOK4e2Vu3vA408I9dx"
+		},
+		{
+			"name": "matrixStyle",
+			"content": "self .FdVirtualGrid > div .selected {\nbackground-color: #d2e2f9;\n  border-radius : 15px;\n}",
+			"parentId": null,
+			"id": "c1i9_3Hu13Ck3DCqtrUdR"
+		}
+	]
+}

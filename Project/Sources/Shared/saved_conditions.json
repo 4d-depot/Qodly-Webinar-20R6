@@ -1,0 +1,40 @@
+{
+	"conditions": [
+		{
+			"id": "pYDxDeRFuUq4W979h4WpgR",
+			"type": "combination",
+			"op": "and",
+			"conditions": [
+				{
+					"id": "4kB7zqN4hnieF6FPkymo97",
+					"type": "datasource",
+					"name": "condition",
+					"path": "newApp.doctor",
+					"op": "notnull"
+				},
+				{
+					"id": "qyfKngn6pWBspX7ysdE11f",
+					"type": "datasource",
+					"name": "condition",
+					"path": "newApp.patient",
+					"op": "notnull"
+				},
+				{
+					"id": "qHCsmt7WYhSrMDq2Vu2wZD",
+					"type": "datasource",
+					"name": "condition",
+					"path": "newApp.when",
+					"op": "notnull"
+				},
+				{
+					"id": "8iWgTqufitFv8hmmdyHMCs",
+					"type": "datasource",
+					"name": "condition",
+					"path": "theTime",
+					"op": "notnull"
+				}
+			],
+			"name": "ReadyTosave"
+		}
+	]
+}

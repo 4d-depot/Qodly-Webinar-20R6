@@ -1,0 +1,168 @@
+{
+	"tables": {
+		"(Why)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 44.26171875,
+				"top": 388.83984375,
+				"width": 109.03515625,
+				"height": 104.1953125
+			},
+			"displayable_fields_count": 2,
+			"fields_ordering": 1
+		},
+		"(DoctorSequentialNumber)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 2085.41015625,
+				"top": 1368.84765625,
+				"width": 181.875,
+				"height": 111.14453125
+			},
+			"displayable_fields_count": 3
+		},
+		"People": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 428.15625,
+				"top": 191.29296875,
+				"width": 168.6875,
+				"height": 192.328125
+			},
+			"displayable_fields_count": 7,
+			"fields_ordering": 2,
+			"fields": {
+				"gender": {
+					"position": 7
+				},
+				"type": {
+					"position": 6
+				},
+				"photo": {
+					"position": 5
+				},
+				"lastname": {
+					"position": 3
+				},
+				"firstname": {
+					"position": 2
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"(Speciality)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 727.98046875,
+				"top": 380.5703125,
+				"width": 117.66015625,
+				"height": 119.43359375
+			},
+			"displayable_fields_count": 3,
+			"fields_ordering": 1
+		},
+		"Appointment": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 4.65625,
+				"top": 0,
+				"width": 232.5859375,
+				"height": 190.125
+			},
+			"displayable_fields_count": 7,
+			"fields_ordering": 1
+		},
+		"(User)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1227.87890625,
+				"top": 1326.77734375,
+				"width": 149.9921875,
+				"height": 141.7734375
+			},
+			"displayable_fields_count": 4,
+			"fields_ordering": 1
+		},
+		"(PatientSequentialNumber)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1854.2421875,
+				"top": 1366.98828125,
+				"width": 201.140625,
+				"height": 112.73046875
+			},
+			"displayable_fields_count": 3
+		},
+		"(Role)": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1661.48828125,
+				"top": 1369.8125,
+				"width": 139.96875,
+				"height": 106.02734375
+			},
+			"displayable_fields_count": 3,
+			"fields_ordering": 1
+		}
+	},
+	"relations": {
+		"C451786620E44CFCAE566DF863AD4686": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		},
+		"3E4445BF0E1143F38F4C3DAA0B8A0F28": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			}
+		}
+	}
+}
