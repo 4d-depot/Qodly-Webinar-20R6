@@ -1,8 +1,8 @@
 # Qodly-Webinar-20R6
 
-**Description** (4D 20 R6)
+create a page in Qodly Studio, install Custom Components and use Page States to enable or disable multiple visual states for your Qodly pages (4D 20 R6)
 
-Replay the Qodly studio demo step by step
+Replay the Qodly studio demo step by step: https://www.youtube.com/watch?v=PM8ndgiFuYY
 
 
 ## Steps to Run the Project
